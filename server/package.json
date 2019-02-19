@@ -1,0 +1,37 @@
+{
+  "name": "tna-sso-azure-template",
+  "version": "1.0.0",
+  "description": "This is a node application to render HTML templates for Microsoft Azure ADB2C",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js --exec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nationalarchives/tna-sso-azure-template.git"
+  },
+  "keywords": [
+    "tna",
+    "sso",
+    "azure",
+    "adb2c"
+  ],
+  "author": "Punal Chotrani, Ashley Burnett, Gwyn Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nationalarchives/tna-sso-azure-template/issues"
+  },
+  "homepage": "https://github.com/nationalarchives/tna-sso-azure-template#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "nodemon": "^1.18.10"
+  }
+}
