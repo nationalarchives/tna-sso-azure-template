@@ -4,7 +4,9 @@
   "description": "This is a node application to render HTML templates for Microsoft Azure ADB2C",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js --exec"
+    "start": "nodemon server.js --exec",
+    "build-css": "node-sass --include-path scss assets/scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "eslint": "^5.14.1",
+    "node-sass": "^4.11.0",
     "nodemon": "^1.18.10"
   }
 }

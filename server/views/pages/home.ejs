@@ -1,4 +1,96 @@
 <%- contentFor('main') %>
-<div class="text-center">
-  Home Page
-</div>
+<main id="main" role="main" class="col-xs-12 col-sm-8 col-md-8">
+  <article class="breather">
+    <div class="entry-header">
+      <h1>Login</h1>
+    </div>
+    <div class="entry-content clearfix">
+      <div id="api" data-name="Unified">
+        <div
+          class="localAccount"
+          aria-label="Sign in with your existing account"
+          role="form"
+        >
+          <div class="intro">
+            <h2>
+              Sign in with your existing account
+            </h2>
+          </div>
+          <div
+            class="error pageLevel"
+            aria-hidden="true"
+            style="display: none;"
+          >
+            <p role="alert"></p>
+          </div>
+          <div class="entry">
+            <div class="entry-item">
+              <label for="signInName">
+                Email Address
+              </label>
+              <div
+                class="error itemLevel"
+                aria-hidden="true"
+                style="display: none;"
+              >
+                <p role="alert"></p>
+              </div>
+              <input
+                type="email"
+                id="signInName"
+                name="Sign in name"
+                pattern="^[a-zA-Z0-9.!#$%&amp;’'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                placeholder="Email Address"
+                value=""
+                tabindex="1"
+              />
+            </div>
+            <div class="entry-item">
+              <div class="password-label">
+                <label for="password">Password</label>
+                <a
+                  id="forgotPassword"
+                  tabindex="2"
+                  href="/tnasso.onmicrosoft.com/B2C_1A_PreMigration_signup_signin/api/CombinedSigninAndSignup/forgotPassword?csrf_token=NllraUlmUHVpdXlaVEtmbWZNWk5rUDR4ZGphZHg1ZEF0V1NIR0svYldnbG8yQTBMRVZ4S1N5cXB5UlI3MERuaHg4TDF6ZWt6ZFU0TXN3Q29hSVNFaXc9PTsyMDE5LTAyLTEyVDE2OjE3OjQwLjc2MTA1NTVaO2N2NFZQZWp0ZCtYUTRzdWJSR0Rua1E9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJiZGUxN2QzNC0yZmM4LTQzNmUtOTc3My1lOWUzZGE3ZWYzMjgifQ&amp;p=B2C_1A_PreMigration_signup_signin"
+                  >Forgot your password?</a
+                >
+              </div>
+              <div
+                class="error itemLevel"
+                aria-hidden="true"
+                style="display: none;"
+              >
+                <p role="alert"></p>
+              </div>
+              <input
+                type="password"
+                id="password"
+                name="Password"
+                placeholder="Password"
+                tabindex="1"
+              />
+            </div>
+            <div class="working"></div>
+            <div class="buttons">
+              <button id="next" tabindex="1">Sign in</button>
+            </div>
+          </div>
+
+          <div class="divider">
+            <h2>OR</h2>
+          </div>
+          <div class="create">
+            <p>
+              Don't have an account?<a
+                id="createAccount"
+                tabindex="1"
+                href="/tnasso.onmicrosoft.com/B2C_1A_PreMigration_signup_signin/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=NllraUlmUHVpdXlaVEtmbWZNWk5rUDR4ZGphZHg1ZEF0V1NIR0svYldnbG8yQTBMRVZ4S1N5cXB5UlI3MERuaHg4TDF6ZWt6ZFU0TXN3Q29hSVNFaXc9PTsyMDE5LTAyLTEyVDE2OjE3OjQwLjc2MTA1NTVaO2N2NFZQZWp0ZCtYUTRzdWJSR0Rua1E9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJiZGUxN2QzNC0yZmM4LTQzNmUtOTc3My1lOWUzZGE3ZWYzMjgifQ&amp;p=B2C_1A_PreMigration_signup_signin"
+                >Sign up now</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>

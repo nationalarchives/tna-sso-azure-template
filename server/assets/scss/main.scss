@@ -1,0 +1,74 @@
+$tna_teal: #008484;
+$tna_yellow: #fce45c;
+
+.intro {
+  display: none;
+}
+
+.entry-item {
+  label {
+    display: block;
+  }
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 2px;
+  height: 34px;
+  text-indent: 5px;
+  min-width: 220px;
+  border-radius: 4px;
+
+  &[type="email"] {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 1.5em;
+  }
+  &[type="password"] {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+.buttons {
+  margin-top: 2em;
+  button#next {
+    background-color: $tna_teal;
+    color: #fff;
+    padding: 0.5em 0.9em;
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+    margin-top: 0.5em;
+    border: none;
+
+    &:focus {
+      background-color: $tna_yellow;
+      color: #000;
+      text-decoration: underline;
+    }
+    &:hover {
+      background-color: $tna_yellow;
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}
+
+a#createAccount {
+  margin-left: 0.5em;
+}
+
+.divider,
+.create {
+  display: none;
+}
+
+#forgotPassword {
+  position: relative;
+  top: 5em;
+  left: 6em;
+}
+
+.password-label {
+  height: 1.8em;
+}
