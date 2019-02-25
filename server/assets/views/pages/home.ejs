@@ -7,6 +7,31 @@
     <div class="entry-content clearfix">
       <div id="api" data-name="Unified">
         <div
+          class="social"
+          aria-label="Sign in with your social account"
+          role="form"
+        >
+          <div class="intro">
+            <h2>Sign in with your social account</h2>
+          </div>
+          <div class="options">
+            <div>
+              <button
+                class="accountButton firstButton"
+                id="ContosoExchange"
+                tabindex="1"
+              >
+                devtna.onmicrosoft.com Employee
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider">
+          <h2>OR</h2>
+        </div>
+
+        <div
           class="localAccount"
           aria-label="Sign in with your existing account"
           role="form"
@@ -18,10 +43,10 @@
           </div>
           <div
             class="error pageLevel"
-            aria-hidden="true"
-            style="display: none;"
+            aria-hidden="false"
+            style="display: block;"
           >
-            <p role="alert"></p>
+            <p role="alert">Your password is incorrect</p>
           </div>
           <div class="entry">
             <div class="entry-item">
@@ -33,7 +58,7 @@
                 aria-hidden="true"
                 style="display: none;"
               >
-                <p role="alert"></p>
+                <p role="alert">Please enter your email</p>
               </div>
               <input
                 type="email"
@@ -43,6 +68,7 @@
                 placeholder="Email Address"
                 value=""
                 tabindex="1"
+                class=""
               />
             </div>
             <div class="entry-item">
@@ -51,7 +77,7 @@
                 <a
                   id="forgotPassword"
                   tabindex="2"
-                  href="/tnasso.onmicrosoft.com/B2C_1A_PreMigration_signup_signin/api/CombinedSigninAndSignup/forgotPassword?csrf_token=NllraUlmUHVpdXlaVEtmbWZNWk5rUDR4ZGphZHg1ZEF0V1NIR0svYldnbG8yQTBMRVZ4S1N5cXB5UlI3MERuaHg4TDF6ZWt6ZFU0TXN3Q29hSVNFaXc9PTsyMDE5LTAyLTEyVDE2OjE3OjQwLjc2MTA1NTVaO2N2NFZQZWp0ZCtYUTRzdWJSR0Rua1E9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJiZGUxN2QzNC0yZmM4LTQzNmUtOTc3My1lOWUzZGE3ZWYzMjgifQ&amp;p=B2C_1A_PreMigration_signup_signin"
+                  href="/tnasso.onmicrosoft.com/B2C_1A_TNASSO_signup_signin/api/CombinedSigninAndSignup/forgotPassword?csrf_token=azVoOHArSFRwMlg5M3lrTGc0cWdmQXZ5bkl5YzhGeHdMRGpxWVZXc3ZLZy8rODQ0ZlNFYTlxcnh3dDYrMVVTOGNVa3l3dzljMVpORVBzY1gwSTNURWc9PTsyMDE5LTAyLTIxVDE1OjA1OjI0LjQ4NDk2NTZaOzZQSTdqOW9TckdrTjRFN3k0RFZZUHc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJlMTFkN2JhMC00YzRkLTQwYmItYTdmMi1lNzI0YTI3MzNlMmEifQ&amp;p=B2C_1A_TNASSO_signup_signin"
                   >Forgot your password?</a
                 >
               </div>
@@ -60,7 +86,7 @@
                 aria-hidden="true"
                 style="display: none;"
               >
-                <p role="alert"></p>
+                <p role="alert">Please enter your password</p>
               </div>
               <input
                 type="password"
@@ -68,9 +94,10 @@
                 name="Password"
                 placeholder="Password"
                 tabindex="1"
+                class=""
               />
             </div>
-            <div class="working"></div>
+            <div class="working" style="display: none;"></div>
             <div class="buttons">
               <button id="next" tabindex="1">Sign in</button>
             </div>
@@ -84,7 +111,7 @@
               Don't have an account?<a
                 id="createAccount"
                 tabindex="1"
-                href="/tnasso.onmicrosoft.com/B2C_1A_PreMigration_signup_signin/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=NllraUlmUHVpdXlaVEtmbWZNWk5rUDR4ZGphZHg1ZEF0V1NIR0svYldnbG8yQTBMRVZ4S1N5cXB5UlI3MERuaHg4TDF6ZWt6ZFU0TXN3Q29hSVNFaXc9PTsyMDE5LTAyLTEyVDE2OjE3OjQwLjc2MTA1NTVaO2N2NFZQZWp0ZCtYUTRzdWJSR0Rua1E9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJiZGUxN2QzNC0yZmM4LTQzNmUtOTc3My1lOWUzZGE3ZWYzMjgifQ&amp;p=B2C_1A_PreMigration_signup_signin"
+                href="/tnasso.onmicrosoft.com/B2C_1A_TNASSO_signup_signin/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=azVoOHArSFRwMlg5M3lrTGc0cWdmQXZ5bkl5YzhGeHdMRGpxWVZXc3ZLZy8rODQ0ZlNFYTlxcnh3dDYrMVVTOGNVa3l3dzljMVpORVBzY1gwSTNURWc9PTsyMDE5LTAyLTIxVDE1OjA1OjI0LjQ4NDk2NTZaOzZQSTdqOW9TckdrTjRFN3k0RFZZUHc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJlMTFkN2JhMC00YzRkLTQwYmItYTdmMi1lNzI0YTI3MzNlMmEifQ&amp;p=B2C_1A_TNASSO_signup_signin"
                 >Sign up now</a
               >
             </p>

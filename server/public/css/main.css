@@ -1,27 +1,27 @@
-.intro {
+#api .intro {
   display: none; }
 
-.entry-item label {
+#api .entry-item label {
   display: block; }
 
-input {
+#api input {
   border: 1px solid #ccc;
   padding: 2px;
   height: 34px;
   text-indent: 5px;
   min-width: 220px;
   border-radius: 4px; }
-  input[type="email"] {
+  #api input[type="email"] {
     width: 100%;
     max-width: 420px;
     margin-bottom: 1.5em; }
-  input[type="password"] {
+  #api input[type="password"] {
     width: 100%;
     max-width: 420px; }
 
-.buttons {
+#api .buttons {
   margin-top: 2em; }
-  .buttons button#next {
+  #api .buttons button#next {
     background-color: #008484;
     color: #fff;
     padding: 0.5em 0.9em;
@@ -30,26 +30,37 @@ input {
     text-align: center;
     margin-top: 0.5em;
     border: none; }
-    .buttons button#next:focus {
+    #api .buttons button#next:focus {
       background-color: #fce45c;
       color: #000;
       text-decoration: underline; }
-    .buttons button#next:hover {
+    #api .buttons button#next:hover {
       background-color: #fce45c;
       color: #000;
       text-decoration: underline; }
 
-a#createAccount {
+#api a#createAccount {
   margin-left: 0.5em; }
 
-.divider,
-.create {
-  display: none; }
-
-#forgotPassword {
+#api #forgotPassword {
   position: relative;
   top: 5em;
   left: 6em; }
 
-.password-label {
+#api .password-label {
   height: 1.8em; }
+
+#api #ContosoExchange {
+  background: none;
+  border: none;
+  color: #2a5db0; }
+  #api #ContosoExchange:hover {
+    text-decoration: underline; }
+
+#api .error,
+#api .pageLevel {
+  margin: 1em 0;
+  padding: 1.6em 1em;
+  font-size: 1em;
+  background-color: #fff8d0 !important;
+  border-left: 4px solid #ebab2c !important; }

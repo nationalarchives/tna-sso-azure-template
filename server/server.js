@@ -10,6 +10,9 @@ const morgan = require("morgan");
 const app = express();
 const port = 5000;
 
+// Default views folder
+app.set("views", "./assets/views");
+
 // Set the templating engine
 app.set("view engine", "ejs");
 app.use(expressLayouts);
