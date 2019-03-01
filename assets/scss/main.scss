@@ -1,6 +1,11 @@
 $tna_teal: #008484;
 $tna_yellow: #fce45c;
 $tna_link: #2a5db0;
+$tna_ribbon: #405480;
+
+h1 {
+  color: red;
+}
 
 #api {
   .intro {
@@ -96,4 +101,32 @@ $tna_link: #2a5db0;
 .sep {
   margin-left: 0.4em;
   margin-right: 0.4em;
+}
+
+.content {
+  background-color: #fff;
+  margin-bottom: 1.5em;
+
+  .entry-header {
+    padding: 10px 10px 0 0;
+    background: url(../img/dot-grey.png);
+
+    h1 {
+      font-size: 2em;
+      padding: 4px 10px;
+      line-height: 1.25;
+      background-color: $tna_ribbon;
+      margin: 0 10px 0 -10px;
+      display: inline-block;
+      color: #fff;
+
+      &::after {
+        content: " ";
+        display: block;
+        height: 10px;
+        margin: 0 0 0 -10px;
+        background: url(../img/heading-flourish.png) bottom left no-repeat;
+      }
+    }
+  }
 }
