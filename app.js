@@ -6,6 +6,7 @@ const copydir = require("copy-dir");
 const outputDir = "output";
 const outputCssFolder = `${outputDir}/css`;
 const outputImgFolder = `${outputDir}/img`;
+const pretty = require("pretty");
 
 fs.readdir(templatePath, (err, files) => {
   if (err) {
@@ -37,7 +38,7 @@ fs.readdir(templatePath, (err, files) => {
 
             fs.writeFile(
               `${outputDir}/${fileName}.html`.replace(".pug", ""),
-              compiledFunction(),
+              pretty(compiledFunction()),
               err => {
                 if (err) throw err;
                 console.log("The file has been saved!");
