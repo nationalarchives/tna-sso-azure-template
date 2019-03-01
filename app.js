@@ -1,12 +1,12 @@
-const pug = require("pug");
-const fs = require("fs");
-const path = require("path");
-const templatePath = "./assets/templates";
-const copydir = require("copy-dir");
-const outputDir = "output";
-const outputCssFolder = `${outputDir}/css`;
-const outputImgFolder = `${outputDir}/img`;
-const pretty = require("pretty");
+const pug = require("pug"),
+  fs = require("fs"),
+  path = require("path"),
+  templatePath = "./assets/templates",
+  copydir = require("copy-dir"),
+  outputDir = "output",
+  outputCssFolder = `${outputDir}/css`,
+  outputImgFolder = `${outputDir}/img`,
+  pretty = require("pretty");
 
 fs.readdir(templatePath, (err, files) => {
   if (err) {
