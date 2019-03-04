@@ -2,6 +2,10 @@ $tna_teal: #008484;
 $tna_yellow: #fce45c;
 $tna_link: #2a5db0;
 $tna_ribbon: #405480;
+$tna_white: #fff;
+$tna_heading_flourish: url("../img/heading-flourish.png") no-repeat bottom left;
+$tna_dot_grey: url("../img/dot-grey.png");
+$tna_blue: #405480;
 
 h1 {
   color: red;
@@ -104,29 +108,47 @@ h1 {
 }
 
 .content {
-  background-color: #fff;
+  background-color: $tna_white;
   margin-bottom: 1.5em;
-
   .entry-header {
     padding: 10px 10px 0 0;
-    background: url(../img/dot-grey.png);
-
+    background: $tna_dot_grey;
     h1 {
       font-size: 2em;
       padding: 4px 10px;
+      background-color: $tna_blue;
+      color: #fff;
       line-height: 1.25;
-      background-color: $tna_ribbon;
       margin: 0 10px 0 -10px;
       display: inline-block;
-      color: #fff;
-
-      &::after {
-        content: " ";
-        display: block;
-        height: 10px;
-        margin: 0 0 0 -10px;
-        background: url(../img/heading-flourish.png) bottom left no-repeat;
-      }
     }
+  }
+  .entry-header:after {
+    content: " ";
+    display: block;
+    height: 10px;
+    margin: 0 0 0 -10px;
+    background: $tna_heading_flourish;
+  }
+  .entry-content {
+    padding: 20px;
+    .thumbnail {
+      margin-bottom: 10px;
+      border: none;
+      padding: 0;
+    }
+  }
+}
+.equal-heights {
+  > div {
+    background: white;
+    background-clip: content-box;
+    margin-bottom: 1.5em;
+  }
+  article {
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: 0.5em;
   }
 }
