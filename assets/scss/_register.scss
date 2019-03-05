@@ -1,0 +1,82 @@
+[data-name="SelfAsserted"] {
+  #attributeList {
+    ul {
+      li:first-of-type {
+        .buttons {
+          margin-left: 0;
+        }
+      }
+      li {
+        list-style: none;
+
+        div.attrEntry {
+          display: flex;
+          flex-direction: column;
+
+          > div {
+            margin-bottom: 0.5em;
+
+            .verificationInfoText {
+              font-weight: 700;
+            }
+          }
+          .error.itemLevel {
+            order: 5;
+          }
+          .buttons.verify {
+            order: 2;
+            margin-top: 0;
+            margin-bottom: 1.5em;
+          }
+          label {
+            order: 3;
+          }
+          input {
+            order: 3;
+            max-width: 420px;
+          }
+          a.helpLink.tiny {
+            order: 4;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    margin-left: 1.5em;
+
+    #continue {
+      background-color: $tna_teal;
+      padding: 0.5em 0.9em;
+      min-width: 24px;
+      text-align: center;
+      border: none;
+      color: $tna_white;
+
+      &:focus {
+        background-color: $tna_yellow;
+        color: #000;
+        text-decoration: underline;
+      }
+      &:hover {
+        background-color: $tna_yellow;
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+    #cancel {
+      color: $tna_link;
+      text-decoration: none;
+      background: none;
+      border: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .error.itemLevel {
+    display: none !important;
+  }
+}

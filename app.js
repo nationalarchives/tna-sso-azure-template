@@ -41,7 +41,11 @@ fs.readdir(templatePath, (err, files) => {
               pretty(compiledFunction()),
               err => {
                 if (err) throw err;
-                console.log("The file has been saved!");
+                console.log(
+                  `${fileName
+                    .replace(".pug", ".html")
+                    .toUpperCase()} file has been saved!`
+                );
               }
             );
           });
