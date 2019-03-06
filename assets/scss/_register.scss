@@ -42,6 +42,9 @@
         }
       }
     }
+    [aria-hidden="true"] {
+      display: none;
+    }
   }
 
   .buttons {
@@ -75,8 +78,5 @@
         text-decoration: underline;
       }
     }
-  }
-  .error.itemLevel {
-    display: none !important;
   }
 }
