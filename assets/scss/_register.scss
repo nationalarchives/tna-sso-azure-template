@@ -29,10 +29,10 @@
             margin-bottom: 1.5em;
           }
           label {
-            order: 3;
+            order: 1;
           }
           input {
-            order: 3;
+            order: 2;
             max-width: 420px;
           }
           a.helpLink.tiny {
@@ -44,6 +44,10 @@
     }
     [aria-hidden="true"] {
       display: none;
+    }
+    #email {
+      display: block;
+      margin-bottom: 0.5em;
     }
   }
 
@@ -75,6 +79,65 @@
       background: none;
       border: none;
       &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  #attributeVerification {
+    #email_ver_input_label,
+    #email_ver_input {
+      display: block !important;
+    }
+    #email_ver_input {
+      margin-top: 0.5em;
+    }
+    #email_ver_but_verify {
+      background-color: $tna_teal;
+      padding: 0.5em 0.9em;
+      min-width: 24px;
+      text-align: center;
+      border: none;
+      color: $tna_white;
+      margin-top: 0.5em;
+
+      &:focus {
+        background-color: $tna_yellow;
+        color: #000;
+        text-decoration: underline;
+      }
+      &:hover {
+        background-color: $tna_yellow;
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+    #email_ver_but_resend {
+      color: $tna_link;
+      text-decoration: none;
+      background: none;
+      border: none;
+      margin-top: 0.5em;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    #verifyButton {
+      background-color: $tna_teal;
+      padding: 0.5em 0.9em;
+      min-width: 24px;
+      text-align: center;
+      border: none;
+      color: $tna_white;
+
+      &:focus {
+        background-color: $tna_yellow;
+        color: #000;
+        text-decoration: underline;
+      }
+      &:hover {
+        background-color: $tna_yellow;
+        color: #000;
         text-decoration: underline;
       }
     }
