@@ -58,7 +58,8 @@
       }
       #email_ver_input_label {
         &::after {
-          content: "<br>";
+          content: "";
+          display: block;
         }
       }
     }
