@@ -56,6 +56,11 @@
       #email_ver_input_label {
         margin-top: 10px;
       }
+      #email_ver_input_label {
+        &::after {
+          content: "<br>";
+        }
+      }
     }
   }
 
