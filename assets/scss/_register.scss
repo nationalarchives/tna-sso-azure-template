@@ -108,6 +108,14 @@
       &::after {
         content: " ";
         display: block;
+        background: none;
+        border: none;
+      }
+      &::before {
+        content: " ";
+        display: block;
+        background: none;
+        border: none;
       }
     }
     #email_ver_but_verify {
