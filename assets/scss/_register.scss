@@ -31,6 +31,9 @@
           label {
             order: 1;
           }
+          label[for="email"] {
+            margin-top: 2em;
+          }
           input {
             order: 2;
             max-width: 420px;
@@ -105,15 +108,17 @@
       background-color: $tna_success;
       border-left: 4px solid $tna_success_border;
 
-      &::after {
-        content: " ";
-        display: block;
-        background: none;
-        border: none;
-      }
       &::before {
         content: " ";
-        display: block;
+        display: inline-block;
+        background: none;
+        border: none;
+        margin-top: 2em;
+      }
+
+      &::after {
+        content: " ";
+        display: inline-block;
         background: none;
         border: none;
       }
