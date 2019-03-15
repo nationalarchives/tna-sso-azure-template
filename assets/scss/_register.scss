@@ -54,7 +54,13 @@
     .validate {
       #email_ver_input_label,
       #email_ver_input {
-        display: block; // !important;
+        display: block;
+      }
+      #email_ver_input {
+        &::after {
+          content: " ";
+          display: block;
+        }
       }
       #email_ver_input_label {
         margin-top: 10px;
