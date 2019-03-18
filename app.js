@@ -44,7 +44,7 @@ fs.readdir(templatePath, (err, files) => {
                 console.log(
                   `${fileName
                     .replace(".pug", ".html")
-                    .toUpperCase()} file has been saved!`
+                    .toUpperCase()} file has been saved 👍🏼`
                 );
               }
             );

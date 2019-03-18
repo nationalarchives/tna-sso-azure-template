@@ -2,10 +2,10 @@
   "name": "create-html-from-js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build": "node app.js && npm run css-build && npm run open",
-    "dev": "node app.js && npm run css-build && npm run dev-open",
+    "dev": "node app.js && npm run css-watch && npm run dev-open",
     "dev-open": "concurrently \"http-server -a localhost -p 1234\"",
     "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/output\"",
     "css-build": "./node_modules/node-sass/bin/node-sass --output-style compressed assets/scss/main.scss > output/css/main.css",
