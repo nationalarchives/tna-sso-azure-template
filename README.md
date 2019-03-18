@@ -21,10 +21,10 @@ Make changes in the assets directory as this will be then need to be compiled in
 
 - Templates 🐶 - Contains all the template files
   - includes - assests eg. header, footer etc.
-  - mocks - these include partials for testing purposes
+  - mocks - these include partials for testing purposes only, to display each state of the application.
 - sass - includes all the styles
 - img - associated images
-- output
+- output - final build files. ( Do not directly make changes here ).
 - app.js - This is the app that tranpiles the files from PUG => HTML
 
 ## Usage 🕹️

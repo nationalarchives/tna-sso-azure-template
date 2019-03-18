@@ -57,10 +57,7 @@
         display: block;
       }
       #email_ver_input {
-        &::after {
-          content: " ";
-          display: block;
-        }
+        display: block !important;
       }
       #email_ver_input_label {
         margin-top: 10px;
