@@ -166,17 +166,22 @@
       }
     }
   }
+
   #attributeList {
     .validate {
       #email_ver_input_label {
         margin-top: 10px;
+        display: none !important;
       }
       #email_ver_input_label {
-        &::after {
-          content: "";
-          display: block;
-        }
+        display: block !important;
       }
+      // #email_ver_input_label {
+      //   &::after {
+      //     content: "";
+      //     display: block;
+      //   }
+      // }
       #email_ver_but_edit {
         display: none !important;
       }
