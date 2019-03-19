@@ -1,10 +1,10 @@
 # HTML Generator
 
-This is a HTML template generator specifically designed and developed to work with Microsoft Azure ADB2C templates based on [TNA style guides](http://designguide.livelb.nationalarchives.gov.uk/palette/web-colours/ target="\_blank").
+This is a HTML template generator specifically designed and developed to work with Microsoft Azure ADB2C templates based on [TNA style guides](http://designguide.livelb.nationalarchives.gov.uk/palette/web-colours/ "title" target="\_blank").
 
 ## Installation 🔌
 
-This is a [Node.js](https://nodejs.org/en/ target="\_blank") application, which means you will require node to run the application.
+This is a [Node.js](https://nodejs.org/en/ "title" target="\_blank") application, which means you will require node to run the application.
 
 Using your terminal navigate into the folder
 
