@@ -192,9 +192,6 @@
         display: block !important;
       }
       #email_success {
-        display: none !important;
-      }
-      #email_success {
         display: block !important;
         margin: 1em 0;
         padding: 1.6em 1em;
@@ -204,4 +201,9 @@
       }
     }
   }
+  // #attributeList {
+  //   #email_success {
+  //     display: none !important;
+  //   }
+  // }
 }
