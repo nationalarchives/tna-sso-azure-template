@@ -178,9 +178,21 @@
           display: block;
         }
       }
-      // #email_ver_but_edit {
-      //   display: none !important;
-      // }
+      #email_ver_but_edit {
+        background-color: #008484;
+        padding: 0.5em 0.9em;
+        min-width: 24px;
+        text-align: center;
+        border: none;
+        color: #fff;
+        margin-top: 10px;
+
+        &:hover {
+          background-color: $tna_yellow;
+          color: #000;
+          text-decoration: underline;
+        }
+      }
       label[for="reenterPassword"] + div.error > p {
         &::after {
           content: "Please re-confirm password";
