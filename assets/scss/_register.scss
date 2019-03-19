@@ -178,12 +178,12 @@
           display: block;
         }
       }
-      #email_ver_but_edit {
-        display: none !important;
-      }
+      // #email_ver_but_edit {
+      //   display: none !important;
+      // }
       label[for="reenterPassword"] + div.error > p {
         &::after {
-          content: "Please re-enter password";
+          content: "Please re-confirm password";
         }
       }
     }
