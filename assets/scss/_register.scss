@@ -51,25 +51,6 @@
     #email {
       display: block;
     }
-    .validate {
-      #email_ver_input_label,
-      #email_ver_input {
-        display: block !important;
-      }
-
-      #email_ver_input_label {
-        margin-top: 10px;
-      }
-      #email_ver_input_label {
-        &::after {
-          content: "";
-          display: block;
-        }
-      }
-      #email_ver_but_edit {
-        display: none !important;
-      }
-    }
   }
 
   .buttons {
@@ -182,6 +163,28 @@
         background-color: $tna_yellow;
         color: #000;
         text-decoration: underline;
+      }
+    }
+  }
+  #attributeList {
+    .validate {
+      #email_ver_input_label {
+        margin-top: 10px;
+      }
+      #email_ver_input_label {
+        &::after {
+          content: "";
+          display: block;
+        }
+      }
+      #email_ver_but_edit {
+        display: none !important;
+      }
+      #email_ver_input {
+        display: none !important;
+      }
+      #email_ver_input {
+        display: block !important;
       }
     }
   }
