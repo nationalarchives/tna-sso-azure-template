@@ -25,11 +25,11 @@ Make changes in the assets directory as this will be then need to be compiled in
 - sass - includes all the styles
 - img - associated images
 - output - final build files. ( Do not directly make changes here ).
-- app.js - This is the app that tranpiles the files from PUG => HTML
+- app.js - This is the app that transpiles the files from PUG => HTML
 
 ## Usage 🕹️
 
-When making changes to a pug file, you will beed to run the build command which is
+When making changes to a pug file, you will need to run the build command which is
 
 ```sh
 npm run build
