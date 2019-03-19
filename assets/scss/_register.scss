@@ -86,28 +86,28 @@
     }
   }
   #attributeVerification {
-    .verificationSuccessText {
-      margin: 1em 0;
-      padding: 1.6em 1em;
-      font-size: 1em;
-      background-color: $tna_success;
-      border-left: 4px solid $tna_success_border;
+    // .verificationSuccessText {
+    //   margin: 1em 0;
+    //   padding: 1.6em 1em;
+    //   font-size: 1em;
+    //   background-color: $tna_success;
+    //   border-left: 4px solid $tna_success_border;
 
-      &::before {
-        content: " ";
-        display: inline-block;
-        background: none;
-        border: none;
-        margin-top: 2em;
-      }
+    //   &::before {
+    //     content: " ";
+    //     display: inline-block;
+    //     background: none;
+    //     border: none;
+    //     margin-top: 2em;
+    //   }
 
-      &::after {
-        content: " ";
-        display: inline-block;
-        background: none;
-        border: none;
-      }
-    }
+    //   &::after {
+    //     content: " ";
+    //     display: inline-block;
+    //     background: none;
+    //     border: none;
+    //   }
+    // }
     #email_ver_but_verify {
       background-color: $tna_teal;
       padding: 0.5em 0.9em;
@@ -190,6 +190,17 @@
       }
       #email_ver_input {
         display: block !important;
+      }
+      #email_success {
+        display: none !important;
+      }
+      #email_success {
+        display: block !important;
+        margin: 1em 0;
+        padding: 1.6em 1em;
+        font-size: 1em;
+        background-color: $tna_success;
+        border-left: 4px solid $tna_success_border;
       }
     }
   }
