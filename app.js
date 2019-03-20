@@ -6,7 +6,8 @@ const pug = require("pug"),
   outputDir = "output",
   outputCssFolder = `${outputDir}/css`,
   outputImgFolder = `${outputDir}/img`,
-  pretty = require("pretty");
+  pretty = require("pretty"),
+  colors = require("colors/safe");
 
 fs.readdir(templatePath, (err, files) => {
   if (err) {
@@ -42,9 +43,8 @@ fs.readdir(templatePath, (err, files) => {
               err => {
                 if (err) throw err;
                 console.log(
-                  `${fileName
-                    .replace(".pug", ".html")
-                    .toUpperCase()} file has been saved 👍🏼`
+                  colors.bold(`${fileName.replace(".pug", ".html")}`),
+                  "file has been saved 👍🏼"
                 );
               }
             );

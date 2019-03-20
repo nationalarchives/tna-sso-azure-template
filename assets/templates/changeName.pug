@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    include ./includes/head
+    body
+        include ./includes/header
+        include ./includes/breadcrumbs
+
+        div(id="primary", class="content-area")
+            div.container
+                div.row
+                    main(role="main", id="main", class="col-xs-12 col-sm-8 col-md-8")
+                        div.breather.content
+                            div.entry-header
+                                h1 Change name
+                            div.row.entry-content
+                                div(id="api", data-name="Unified")
+        include ./includes/footer
