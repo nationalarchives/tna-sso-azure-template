@@ -172,6 +172,7 @@
     .validate {
       #email_ver_input_label {
         margin-top: 10px;
+        display: block !important;
       }
       #email_ver_input_label {
         &::after {
