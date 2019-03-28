@@ -114,6 +114,10 @@
     background-color: $tna_error;
     border-left: 4px solid $tna_error_border;
   }
+  #claimVerificationServerError,
+  #passwordEntryMismatch {
+    margin-left: 1.5em;
+  }
 }
 
 .sep {
