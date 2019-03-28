@@ -66,7 +66,7 @@
     }
   }
   .highlightError {
-    border: $tna_error solid 3px !important;
+    border: $tna_error_border solid 3px;
   }
 
   .entry-item {
@@ -107,13 +107,13 @@
     background-color: $tna_error;
     border-left: 4px solid $tna_error_border;
   }
-  // .error {
-  //   // margin: 1em 1.5em;
-  //   padding: 1.6em 1em;
-  //   font-size: 1em;
-  //   background-color: $tna_error;
-  //   border-left: 4px solid $tna_error_border;
-  // }
+
+  #email_fail_retry {
+    padding: 1.6em 1em;
+    font-size: 1em;
+    background-color: $tna_error;
+    border-left: 4px solid $tna_error_border;
+  }
 }
 
 .sep {
