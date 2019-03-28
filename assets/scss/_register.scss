@@ -15,10 +15,6 @@
 
           > div {
             margin-bottom: 0.5em;
-
-            .verificationInfoText {
-              font-weight: 700;
-            }
           }
           .error.itemLevel {
             order: 3;
@@ -74,6 +70,10 @@
         color: #000;
         text-decoration: underline;
         cursor: pointer;
+      }
+      [disabled] {
+        background-color: #ddd;
+        color: #333;
       }
     }
     #cancel {
