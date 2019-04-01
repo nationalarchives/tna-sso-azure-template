@@ -182,19 +182,14 @@
           color: $tna_white;
           font-size: 3px;
         }
-      }
-      #email_ver_input_label {
         &::before {
           content: "Validation code";
           display: block;
           color: $tna_white;
           font-size: 9px;
         }
-        &::after {
-          content: "";
-          display: block;
-        }
       }
+
       #email_ver_but_edit {
         background-color: #008484;
         padding: 0.5em 0.9em;
@@ -223,7 +218,11 @@
   }
 
   #email_ver_input {
-    content: "Email verifivation input";
-    display: block;
+    margin-right: 0.5em;
+
+    &::after {
+      content: "Email verifivation input";
+      display: block;
+    }
   }
 }
