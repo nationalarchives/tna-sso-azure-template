@@ -230,4 +230,11 @@
       display: block;
     }
   }
+  #email_info {
+    margin: 1em 0;
+    padding: 1.6em 1em;
+    font-size: 1em;
+    background-color: $tna_success;
+    border-left: 4px solid $tna_success_border;
+  }
 }
