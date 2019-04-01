@@ -186,7 +186,8 @@
         &::before {
           content: "Validation code";
           display: block;
-          color-adjust: $tna_white;
+          color: $tna_white;
+          font-size: 0;
         }
         // &::after {
         //   content: "";
