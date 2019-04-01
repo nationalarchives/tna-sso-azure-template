@@ -180,6 +180,7 @@
           content: "Email verification label";
           display: block;
           color: $tna_white;
+          font-size: 3px;
         }
       }
       #email_ver_input_label {
@@ -189,10 +190,10 @@
           color: $tna_white;
           font-size: 9px;
         }
-        // &::after {
-        //   content: "";
-        //   display: block;
-        // }
+        &::after {
+          content: "";
+          display: block;
+        }
       }
       #email_ver_but_edit {
         background-color: #008484;
@@ -219,5 +220,10 @@
   #verifying_blurb {
     margin-left: 1.5em;
     margin-top: 1em;
+  }
+
+  #email_ver_input {
+    content: "Email verifivation input";
+    display: block;
   }
 }
