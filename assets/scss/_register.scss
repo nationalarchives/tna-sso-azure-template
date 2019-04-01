@@ -172,6 +172,11 @@
   }
   #attributeList {
     .validate {
+      &::before {
+        content: "spacing";
+        color: $tna_white;
+      }
+
       #email_ver_input_label {
         margin-top: 10px;
         display: block;
